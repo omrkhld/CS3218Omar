@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sg.edu.nus.simplecalculator.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="60sp"
+        android:layout_gravity="end"
+        android:id="@+id/calculatorDisplay" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allclear"
+            android:id="@+id/ACbutton"
+            android:onClick="allClear"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ACbutton"
+            android:text="@string/clear"
+            android:id="@+id/clearbutton"
+            android:onClick="clear"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/clearbutton"
+            android:text="@string/sqrt"
+            android:id="@+id/sqrtbutton"
+            android:onClick="sqrtOnClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/sqrtbutton"
+            android:text="@string/mas"
+            android:id="@+id/plusbutton"
+            android:onClick="operatorOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ACbutton"
+            android:text="@string/siete"
+            android:id="@+id/sevenbutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/sevenbutton"
+            android:layout_below="@id/clearbutton"
+            android:text="@string/ocho"
+            android:id="@+id/eightbutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/eightbutton"
+            android:layout_below="@id/sqrtbutton"
+            android:text="@string/nueve"
+            android:id="@+id/ninebutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/sqrtbutton"
+            android:layout_below="@id/plusbutton"
+            android:text="@string/menos"
+            android:id="@+id/minusbutton"
+            android:onClick="operatorOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sevenbutton"
+            android:text="@string/cuatro"
+            android:id="@+id/fourbutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fourbutton"
+            android:layout_below="@id/eightbutton"
+            android:text="@string/cinco"
+            android:id="@+id/fivebutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fivebutton"
+            android:layout_below="@id/ninebutton"
+            android:text="@string/seis"
+            android:id="@+id/sixbutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/sixbutton"
+            android:layout_below="@id/minusbutton"
+            android:text="@string/multiply"
+            android:id="@+id/multbutton"
+            android:onClick="operatorOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourbutton"
+            android:text="@string/uno"
+            android:id="@+id/onebutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/onebutton"
+            android:layout_below="@id/fivebutton"
+            android:text="@string/dos"
+            android:id="@+id/twobutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/twobutton"
+            android:layout_below="@id/sixbutton"
+            android:text="@string/tres"
+            android:id="@+id/threebutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/threebutton"
+            android:layout_below="@id/multbutton"
+            android:text="@string/divide"
+            android:id="@+id/divbutton"
+            android:onClick="operatorOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/onebutton"
+            android:text="@string/cero"
+            android:id="@+id/zerobutton"
+            android:onClick="digitsOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/zerobutton"
+            android:layout_below="@id/twobutton"
+            android:text="@string/punto"
+            android:id="@+id/dotbutton"
+            android:onClick="dotOnClick"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dotbutton"
+            android:layout_below="@id/threebutton"
+            android:text="@string/equals"
+            android:id="@+id/equalsbutton"
+            android:onClick="operatorOnClick"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_main"
+        android:onClick="goToMainFromCalc"/>
+</LinearLayout>
