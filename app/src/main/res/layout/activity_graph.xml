@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:onClick="goToMainActivity"
-        android:text="@string/back_to_main" />
+        android:text="@string/goToMainActivity" />
 
     <TextView
         android:id="@+id/displayFunction"

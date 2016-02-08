@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ngtk.cs3218alltutorials.SoundSamplingActivity">
+
+
+    <com.example.ngtk.cs3218alltutorials.CSurfaceViewSoundSampling
+        android:id="@+id/surfaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:soundEffectsEnabled="true" />
+
+    <Button
+        android:id="@+id/btn_CaptureSound"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="captureSound"
+        android:text="@string/capture_sound" />
+
+    <Button
+        android:id="@+id/btn_backToMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="goToMainActivity"
+        android:text="@string/goToMainActivity" />
+
+</LinearLayout>

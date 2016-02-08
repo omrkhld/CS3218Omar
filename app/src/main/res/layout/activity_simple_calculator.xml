@@ -204,6 +204,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/back_to_main"
+        android:text="@string/goToMainActivity"
         android:onClick="goToMainFromCalc"/>
 </LinearLayout>
