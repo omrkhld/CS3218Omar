@@ -153,12 +153,24 @@ public class CSurfaceViewSoundSampling extends SurfaceView implements SurfaceHol
                     }
                 }
                 // display the signal in temporal domain
-                // --- fill in the codes here to display a snapshot of the sound waveform
-                /******/
+                int xStart = 0;
 
+                while (xStart < width -1)  {
+                    int yStart = soundSegmented[xStart] / height * drawScale + height/2;
+                    int yStop  = soundSegmented[xStart+1] / height * drawScale + height/2;
+                    int yStart1 = yStart + height/4;
+                    int yStop1  = yStop  + height/4;
 
+                    canvas.drawLine(xStart, yStart1, xStart +1, yStop1, soundLinePaint3);
 
-                /****/
+                    if (xStart %100 == 0) {
+                        paint.setColor(Color.BLACK);
+                        paint.setTextSize(20);
+                        canvas.drawText(Integer.toString(xStart), xStart, height/2, paint);
+                        canvas.drawText(Integer.toString(yStop),  xStart, yStop1, paint);
+                    }
+                    xStart++;
+                }
             }
         }
 

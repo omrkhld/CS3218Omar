@@ -34,5 +34,6 @@
     <string name="Fminus">              F-</string>
     <string name="compositeFunction">   Composite Function</string>
 
+    <string name="soundName">           Sound (Tutorial 3)</string>
     <string name="capture_sound">       Capture Sound</string>
 </resources>

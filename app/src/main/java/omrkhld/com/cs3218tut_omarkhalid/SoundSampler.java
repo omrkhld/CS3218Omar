@@ -4,9 +4,9 @@ import android.media.AudioRecord;
 import android.util.Log;
 
 /**
- * Created by ngtk on 4/2/16.
- */
-public class SoundSampler {
+    * Created by ngtk on 4/2/16.
+            */
+    public class SoundSampler {
     private static final int  FS = 16000;     // sampling frequency
     public AudioRecord audioRecord;
     private int               audioEncoding = 2;

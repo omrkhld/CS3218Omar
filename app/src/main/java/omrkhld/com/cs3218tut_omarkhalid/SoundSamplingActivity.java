@@ -13,10 +13,14 @@ public class SoundSamplingActivity extends Activity {
     public  static int      bufferSize;     // in bytes
 
     public void goToMainActivity(View view){
-        // --- fill up codes here to end all drawings and sound sampling before returning to MainActivity
-        /****/
+        try {
+            CSurfaceViewSoundSampling.drawFlag = Boolean.valueOf(false);
+            surfaceView.drawThread.join();
+            soundSampler.audioRecord.stop();
+        } catch (InterruptedException localInterruptedException) {
+        }
 
-        /****/
+        finish();
     }
 
     @Override

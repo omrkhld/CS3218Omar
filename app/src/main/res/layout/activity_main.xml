@@ -13,8 +13,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
         android:text="@string/calcName"
         android:layout_gravity="center_horizontal"
         android:onClick="goToSimpleCalcActivity"/>
@@ -22,9 +22,18 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
         android:text="@string/graphName"
         android:layout_gravity="center_horizontal"
         android:onClick="goToGraphActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/soundName"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goToSoundActivity"/>
 </LinearLayout>

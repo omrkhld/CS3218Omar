@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         intent = new Intent(this, GraphActivity.class);
         startActivity(intent);
     }
+
+    public void goToSoundActivity(View view) {
+        intent = new Intent(this, SoundSamplingActivity.class);
+        startActivity(intent);
+    }
 }
