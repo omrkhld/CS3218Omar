@@ -54,4 +54,11 @@ import android.util.Log;
         recordingThread.start();
         return;
     }
+
+    public void stop() {
+        if(audioRecord != null) {
+            audioRecord.stop();
+            audioRecord.release();
+        }
+    }
 }

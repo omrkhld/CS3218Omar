@@ -14,9 +14,9 @@ public class SoundSamplingActivity extends Activity {
 
     public void goToMainActivity(View view){
         try {
-            CSurfaceViewSoundSampling.drawFlag = Boolean.valueOf(false);
+            surfaceView.drawFlag = Boolean.valueOf(false);
             surfaceView.drawThread.join();
-            soundSampler.audioRecord.stop();
+            soundSampler.stop();
         } catch (InterruptedException localInterruptedException) {
         }
 

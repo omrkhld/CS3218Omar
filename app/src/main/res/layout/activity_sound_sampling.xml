@@ -6,7 +6,7 @@
     tools:context="com.example.ngtk.cs3218alltutorials.SoundSamplingActivity">
 
 
-    <com.example.ngtk.cs3218alltutorials.CSurfaceViewSoundSampling
+    <omrkhld.com.cs3218tut_omarkhalid.CSurfaceViewSoundSampling
         android:id="@+id/surfaceView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"

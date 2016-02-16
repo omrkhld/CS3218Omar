@@ -26,6 +26,10 @@
             android:name=".GraphActivity"
             android:configChanges="orientation|screenSize|keyboardHidden">
         </activity>
+
+        <activity
+            android:name=".SoundSamplingActivity">
+        </activity>
     </application>
 
 </manifest>

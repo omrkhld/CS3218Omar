@@ -125,9 +125,7 @@ public class CSurfaceViewSoundSampling extends SurfaceView implements SurfaceHol
             if (!soundCapture) {
                 int xStart = 0;
 
-                // while (xStart < width -1)  {
-
-                while (xStart < soundBuffer.length-1) {
+                while (xStart < soundBuffer.length - 1) {
                     int yStart = soundBuffer[xStart] / height * drawScale;
                     int yStop  = soundBuffer[xStart+1] / height * drawScale;
 
