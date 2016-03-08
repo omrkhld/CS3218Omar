@@ -36,4 +36,13 @@
         android:text="@string/soundName"
         android:layout_gravity="center_horizontal"
         android:onClick="goToSoundActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/calculusName"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goToCalculusActivity"/>
 </LinearLayout>

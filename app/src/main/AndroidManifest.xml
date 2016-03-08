@@ -30,6 +30,10 @@
         <activity
             android:name=".SoundSamplingActivity">
         </activity>
+
+        <activity
+            android:name=".CalculusActivity">
+        </activity>
     </application>
 
 </manifest>

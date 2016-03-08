@@ -125,9 +125,9 @@ public class CSurfaceViewSoundSampling extends SurfaceView implements SurfaceHol
             if (!soundCapture) {
                 int xStart = 0;
 
-                while (xStart < soundBuffer.length - 1) {
-                    int yStart = soundBuffer[xStart] / height * drawScale;
-                    int yStop  = soundBuffer[xStart+1] / height * drawScale;
+                while (xStart < soundSegmented.length - 1) {
+                    int yStart = soundSegmented[xStart] / height * drawScale;
+                    int yStop  = soundSegmented[xStart+1] / height * drawScale;
 
                     int yStart1 = yStart + height/4;
                     int yStop1  = yStop  + height/4;
@@ -143,17 +143,17 @@ public class CSurfaceViewSoundSampling extends SurfaceView implements SurfaceHol
                     xStart++;
                 }
             } else if (soundCapture) {
-                if (segmentIndex < 0) {
+                /*if (segmentIndex < 0) {
                     segmentIndex = 0;
                     while (segmentIndex < FFT_Len) {
                         soundSegmented[segmentIndex] = soundBuffer[segmentIndex];
                         segmentIndex++;
                     }
-                }
+                }*/
                 // display the signal in temporal domain
                 int xStart = 0;
 
-                while (xStart < width -1)  {
+                while (xStart < soundSegmented.length -1)  {
                     int yStart = soundSegmented[xStart] / height * drawScale + height/2;
                     int yStop  = soundSegmented[xStart+1] / height * drawScale + height/2;
                     int yStart1 = yStart + height/4;

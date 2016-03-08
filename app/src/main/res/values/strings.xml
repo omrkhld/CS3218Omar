@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">            CS3218Omar</string>
-    <string name="goToMainActivity">        Back To Main</string>
+    <string name="goToMainActivity">    Back To Main</string>
+    <string name="action_settings">     Settings</string>
 
     <string name="calcName">            Simple Calculator (Tutorial 1)</string>
     <string name="allclear">            AC</string>
@@ -36,4 +37,6 @@
 
     <string name="soundName">           Sound (Tutorial 3)</string>
     <string name="capture_sound">       Capture Sound</string>
+
+    <string name="calculusName">        Calculus (Tutorial 4)</string>
 </resources>
