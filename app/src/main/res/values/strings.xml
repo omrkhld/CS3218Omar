@@ -25,6 +25,7 @@
     <string name="nueve">               9</string>
 
     <string name="graphName">           Graphing (Tutorial 2)</string>
+    <string name="graph_activity_label">Graph Plotting</string>
     <string name="sine">                Sine</string>
     <string name="cosine">              Cosine</string>
     <string name="Aplus">               A+</string>
@@ -33,10 +34,23 @@
     <string name="Pminus">              P-</string>
     <string name="Fplus">               F+</string>
     <string name="Fminus">              F-</string>
+    <string name="fft">                 FFT</string>
     <string name="compositeFunction">   Composite Function</string>
 
     <string name="soundName">           Sound (Tutorial 3)</string>
     <string name="capture_sound">       Capture Sound</string>
 
     <string name="calculusName">        Calculus (Tutorial 4)</string>
+
+    <!-- for FFT Activity (Tutorial 5a) -->
+    <string name="goToFFTActivity">     FFT (Tutorial 5a)</string>
+    <string name="fft_activity_label">  FFT</string>
+
+    <!-- for Live FFT Activity (Tutorial 5b) -->
+    <string name="goToLiveFFTActivity">         Live FFT (Tutorial 5b)</string>
+    <string name="live_fft_activity_label">     Live FFT on Sound</string>
+
+    <!-- for Spectrogram Activity (Tutorial 5c) -->
+    <string name="goToSpectrogramActivity">     Spectrogram (Tutorial 5c)</string>
+    <string name="spectrogram_activity_label">  Spectrogram</string>
 </resources>

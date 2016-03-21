@@ -13,8 +13,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/calcName"
         android:layout_gravity="center_horizontal"
         android:onClick="goToSimpleCalcActivity"/>
@@ -22,8 +22,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/graphName"
         android:layout_gravity="center_horizontal"
         android:onClick="goToGraphActivity"/>
@@ -31,8 +31,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/soundName"
         android:layout_gravity="center_horizontal"
         android:onClick="goToSoundActivity"/>
@@ -40,9 +40,36 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/calculusName"
         android:layout_gravity="center_horizontal"
         android:onClick="goToCalculusActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/goToFFTActivity"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goToFFTActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/goToLiveFFTActivity"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goToLiveFFTActivity"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/goToSpectrogramActivity"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goToSpectrogramActivity"/>
 </LinearLayout>

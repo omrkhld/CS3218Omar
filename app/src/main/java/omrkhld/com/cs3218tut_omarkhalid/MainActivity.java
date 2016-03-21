@@ -57,4 +57,22 @@ public class MainActivity extends AppCompatActivity {
         intent = new Intent(this, CalculusActivity.class);
         startActivity(intent);
     }
+
+    // Tutorial on FFT (Tutorial 5a)
+    public void goToFFTActivity(View v) {
+        intent = new Intent(this, FFTActivity.class);
+        startActivity(intent);
+    }
+
+    // Tutorial on Live FFT (Tutorial 5b)
+    public void goToLiveFFTActivity(View v) {
+        intent = new Intent(this, LiveFFTActivity.class);
+        startActivity(intent);
+    }
+
+    // Tutorial on Live FFT (Tutorial 5c)
+    public void goToSpectrogramActivity(View v) {
+        intent = new Intent(this, SpectrogramActivity.class);
+        startActivity(intent);
+    }
 }
